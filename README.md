@@ -32,6 +32,5 @@ _Image generation has been intentionally removed to keep the plugin focused and 
 - Obsidian 0.15.0 or later.
 - Any OpenAI-compatible REST gateway. Tested with OpenAI and Anthropic endpoints; other providers (OpenRouter, Together, etc.) should work if they expose the same routes.
 
----
-
 <a href="https://www.buymeacoffee.com/alfurkat" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v0/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;"></a>
+
