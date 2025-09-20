@@ -15,16 +15,6 @@ _Image generation has been intentionally removed to keep the plugin focused and 
 
 ## Getting Started
 
-1. Copy this repo into your vault’s plugin directory (e.g. `.obsidian/plugins/mini-assistant`).
-2. Install dependencies and build:
-   ```bash
-   npm install
-   npm run build
-   ```
-3. Toggle **Mini Assistant** in Obsidian’s Community Plugins list.
-4. Open the settings panel to enter provider keys, base URLs, and model identifiers.
-
-## Configuration
 
 ### Providers
 - **Provider 1 / Provider 2** – supply API key + base URL. Empty base URLs default to `https://api.openai.com/v1`.
@@ -41,7 +31,3 @@ _Image generation has been intentionally removed to keep the plugin focused and 
 
 - Obsidian 0.15.0 or later.
 - Any OpenAI-compatible REST gateway. Tested with OpenAI and Anthropic endpoints; other providers (OpenRouter, Together, etc.) should work if they expose the same routes.
-
-## License & Credits
-
-Released under the MIT License. This project started from Quentin Grail’s original “obsidian-ai-assistant” plugin and was refocused into a smaller dual-provider tool by [@alfurka](https://github.com/alfurka).
