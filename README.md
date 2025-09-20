@@ -2,7 +2,7 @@
 
 Mini Assistant is a lean Obsidian companion that lets you talk to the AI models you already pay for. Configure up to two OpenAI-compatible providers (OpenAI, Anthropic gateways, OpenRouter, etc.), pick the model IDs you want, and run chat or speech-to-text flows without maintaining multiple plugins.
 
-<a href="https://www.buymeacoffee.com/alfurkat" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;"></a>
+I have forked this project from: [AI Assistant](https://github.com/qgrail/obsidian-ai-assistant). I really liked this plugin but it has not been updated for a long time. I customized it for myself and decied to share it with everyone. So, this is heavily customized for my workflow. I hope it helps others. 
 
 ## Features
 
@@ -31,3 +31,7 @@ _Image generation has been intentionally removed to keep the plugin focused and 
 
 - Obsidian 0.15.0 or later.
 - Any OpenAI-compatible REST gateway. Tested with OpenAI and Anthropic endpoints; other providers (OpenRouter, Together, etc.) should work if they expose the same routes.
+
+---
+
+<a href="https://www.buymeacoffee.com/alfurkat" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v0/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;"></a>
