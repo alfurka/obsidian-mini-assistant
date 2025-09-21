@@ -5,5 +5,5 @@
 	"description": "A simple AI assistant",
 	"minAppVersion": "0.15.0"
 	"author": "alfurka",
-	"isDesktopOnly": false,
+	"isDesktopOnly": false
 }
