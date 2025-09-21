@@ -2,8 +2,11 @@
 	"id": "mini-assistant",
 	"name": "mini assistant",
 	"version": "0.1.0",
-	"description": "Two-provider AI chat and speech assistant for Obsidian",
+	"description": "A simple AI assistant",
+	"minAppVersion": "0.15.0"
 	"author": "alfurka",
 	"isDesktopOnly": false,
-	"repo": "alfurka/obsidian-mini-assistant"
+	"fundingUrl": {
+		"Buy Me a Coffee": "https://buymeacoffee.com/alfurkat"
+	}
 }
