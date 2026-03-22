@@ -18,6 +18,9 @@ import {
 type Capability = "text" | "speech";
 type ProviderSlot = 1 | 2;
 
+const PROMPT_MODE_SYSTEM_PROMPT =
+	"Your response is inserted directly into the user's Obsidian note. Return only the final requested text. Do not add acknowledgements, introductions, explanations, labels, or quotation marks unless the user asks for them. Use clean Obsidian Markdown. Use $...$ for inline math and $$...$$ for block math only when math notation is actually needed.";
+
 interface AiAssistantSettings {
 	apiKey1: string;
 	apiBaseUrl1: string;
@@ -157,6 +160,10 @@ export default class AiAssistantPlugin extends Plugin {
 					this.app,
 					async (x: { [key: string]: string }) => {
 						let answer = await assistant.text_api_call([
+							{
+								role: "system",
+								content: PROMPT_MODE_SYSTEM_PROMPT,
+							},
 							{
 								role: "user",
 								content:

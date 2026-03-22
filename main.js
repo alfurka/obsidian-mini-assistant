@@ -7282,6 +7282,7 @@ var SpeechModal = class extends import_obsidian2.Modal {
 };
 
 // src/main.ts
+var PROMPT_MODE_SYSTEM_PROMPT = "Your response is inserted directly into the user's Obsidian note. Return only the final requested text. Do not add acknowledgements, introductions, explanations, labels, or quotation marks unless the user asks for them. Use clean Obsidian Markdown. Use $...$ for inline math and $$...$$ for block math only when math notation is actually needed.";
 var DEFAULT_SETTINGS = {
   apiKey1: "",
   apiBaseUrl1: DEFAULT_API_BASE_URL,
@@ -7388,6 +7389,10 @@ var AiAssistantPlugin = class extends import_obsidian3.Plugin {
           this.app,
           async (x) => {
             let answer = await assistant.text_api_call([
+              {
+                role: "system",
+                content: PROMPT_MODE_SYSTEM_PROMPT
+              },
               {
                 role: "user",
                 content: x["prompt_text"] + " : " + selected_text
